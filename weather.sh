@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Weather-Wallpaper V2: Sam Kavanagh, Tofu.dev.
+# See the README for setup instructions.
+
 #==========================================#
 #               USER SETTINGS              #
 #==========================================#
@@ -55,5 +58,3 @@ export DBUS_SESSION_BUS_ADDRESS=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$PID/en
 # Set the wallpaper
 echo -e "file://${WEATHER_WALLPAPERS_DIRECTORY}/${SELECTED_WALLPAPER}"
 gsettings set org.gnome.desktop.background picture-uri "file://${WEATHER_WALLPAPERS_DIRECTORY}/${SELECTED_WALLPAPER}"
-
-
