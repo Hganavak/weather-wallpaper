@@ -1,5 +1,5 @@
-# Weather Wallpaper Switcher (Ubuntu)
-Set your desktop wallpaper/background based on the weather at your current location (Ubuntu).
+# Weather Wallpaper Switcher (GNOME)
+Set your desktop wallpaper/background based on the weather at your current location (GNOME).
 
 
 ##  Explanation & Setup
