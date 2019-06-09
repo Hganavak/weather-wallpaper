@@ -35,6 +35,7 @@ echo -e "Wallpaper directory:\t $WEATHER_WALLPAPERS_DIRECTORY"
 echo -e "Current weather:\t $CUR_WEATHER"
 
 # Decide on the appropriate wallpaper
+shopt -s nocasematch; # Ignore case
 if [[ $CUR_WEATHER =~ Thunderstorm|Heavy|^Rain$ ]]; then
 	SELECTED_WALLPAPER=$HEAVY_RAIN_WALLPAPER
 elif [[ $CUR_WEATHER =~ Shower|Drizzle|"Light Rain" ]]; then
