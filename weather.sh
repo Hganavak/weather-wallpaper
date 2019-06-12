@@ -13,7 +13,7 @@ WEATHER_WALLPAPERS_DIRECTORY="/home/sam/Pictures/weather-wallpapers"
 # Wallpaper filenames and their corresponding weather conditions
 HEAVY_RAIN_WALLPAPER="Rain.jpg" # Rain, Heavy Rain, Thunderstorm
 LIGHT_RAIN_WALLPAPER="Light Rain.jpg" # Light Rain, Drizzle, Shower In Vicinity
-CLOUDY_WALLPAPER="Cloudy.jpg" # Cloudy, Overcast, Mist
+CLOUDY_WALLPAPER="Cloudy.jpg" # Cloudy, Overcast, Mist, Fog
 CLEAR_WALLPAPER="Clear.jpg" # Clear
 SUNNY_WALLPAPER="Sunny.jpg" # Sunny
 SNOW_WALLPAPER="Snow.jpg" # Snow
@@ -40,7 +40,7 @@ if [[ $CUR_WEATHER =~ Thunderstorm|Heavy|^Rain$ ]]; then
 	SELECTED_WALLPAPER=$HEAVY_RAIN_WALLPAPER
 elif [[ $CUR_WEATHER =~ Shower|Drizzle|"Light Rain" ]]; then
 	SELECTED_WALLPAPER=$LIGHT_RAIN_WALLPAPER
-elif [[ $CUR_WEATHER =~ Cloudy|Overcast|Mist ]]; then
+elif [[ $CUR_WEATHER =~ Cloudy|Overcast|Mist|Fog ]]; then
 	SELECTED_WALLPAPER=$CLOUDY_WALLPAPER
 elif [[ $CUR_WEATHER =~ Clear ]]; then
 	SELECTED_WALLPAPER=$CLEAR_WALLPAPER
