@@ -46,7 +46,7 @@ if [ "$DOW_MODE_ENABLED" = true ] ; then
 		4) WEATHER_WALLPAPERS_DIRECTORY="/home/sam/Pictures/weather-wallpapers/chagall/" # Thursday: Chagall
 			;;
 		*) RPIC=$(find /home/sam/Pictures/weather-wallpapers/ -not -type d | shuf -n 1); # Fridays & Weekends: Randomized picture
-			echo "$RPIC"
+			echo "Random picture: $RPIC"
 			gsettings set org.gnome.desktop.background picture-uri "file://${RPIC}"
 			gsettings set org.gnome.desktop.screensaver picture-uri "file://${RPIC}"
 			exit;
