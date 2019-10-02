@@ -86,3 +86,5 @@ fi
 #==========================================#
 ```
 * **Note**: I've set up Fridays and Weekends to select a completely random picture from any of your 'days of the week folders' for a bit of fun, tweak to whatever suits your needs :neckbeard:
+
+By hganavak
